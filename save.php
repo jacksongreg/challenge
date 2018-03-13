@@ -1,6 +1,12 @@
 <?php
+<<<<<<< HEAD
 error_reporting(-1);
 ini_set('display_errors', 1);
+=======
+header("Access-Control-Allow-Origin: *");
+error_reporting(-1);
+ini_set('error_reporting', 1);
+>>>>>>> 48bf484de8123d34c3ab1b91e8e6c6ad56b9d32d
 $conn = mysqli_connect("localhost","root","root","challenge");
 if (!$conn) {
 	die("Connection failed: " . mysqli_connect_error());
